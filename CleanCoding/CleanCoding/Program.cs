@@ -31,16 +31,19 @@ namespace CleanCoding
                 pn = Double.Parse(Console.ReadLine());          
                 double a = (hp / 100) * pn;
                 Console.WriteLine(a + " amount you need");
+
             }
             else if (t == "2")
             {
-                double m, a;
+                double abe, kat;
+                string johannes;
+                double monthsInYear, approximateMultiplier;
                 Console.WriteLine("Monthly income? : " );
-                m = Double.Parse(Console.ReadLine());
+                monthsInYear = Double.Parse(Console.ReadLine());
                 Console.WriteLine("Approximate multiplier ? ");
-                a = Double.Parse(Console.ReadLine());      
-                double y = m * 12;
-                double hpa = y * a;
+                approximateMultiplier = Double.Parse(Console.ReadLine());      
+                double year = monthsInYear * 12;
+                double hpa = year * approximateMultiplier;
                 Console.WriteLine(hpa + " approximate purchase");
             }
             Console.ReadLine();
