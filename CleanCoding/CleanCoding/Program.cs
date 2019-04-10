@@ -36,6 +36,7 @@ namespace CleanCoding
             else if (t == "2")
             {
                 double abe, kat;
+                string johannes;
                 double monthsInYear, approximateMultiplier;
                 Console.WriteLine("Monthly income? : " );
                 monthsInYear = Double.Parse(Console.ReadLine());
